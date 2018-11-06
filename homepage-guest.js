@@ -10,4 +10,10 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
     button.appendChild(text);
     if (next) parent.insertBefore(button, next);
     else parent.appendChild(button);
+
+    //removing Did You Know? section by getting the element ID
+    
+    var element = document.getElementById("module:_4399_1");
+    element.parentNode.removeChild(element);
+    
 }
