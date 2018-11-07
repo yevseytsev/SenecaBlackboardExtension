@@ -1,6 +1,8 @@
 // Checks if the URL is the Seneca BB Homepage (When NOT signed-in)
 if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1")
 {
+    // Changes the links in the "College Services" box
+    // Can directly edit the HTML below to replace what's in the box
     document.getElementById("module:_3073_1").innerHTML = 
     `<!-- extid:3073: --> 
     <div class="edit_controls">
