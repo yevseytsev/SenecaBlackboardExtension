@@ -48,7 +48,7 @@ We would be happy to accept your impovements to Seneca BlackBoard extension for 
     cd SenecaBlackboardExtension
     npm install
     ```
-1. Create issue or comment under existing issue
+1. Create issue or comment under existing issue, and make sure nobody else works on this issue
 1. Create branch corresponding to your issue
 1. Add your files/code to this branch
 1. Build your code
