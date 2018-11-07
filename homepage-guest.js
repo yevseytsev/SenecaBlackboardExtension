@@ -32,6 +32,9 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                        <hr /> <br />
                        <!-- link -->
                                <li style="color: #555555;">
+                                   <a href="https://inside.senecacollege.ca/its/support/myseneca/" target="_blank"><b>MySeneca.Help</b></a> <br /><br /></li>
+                       <!-- link -->
+                               <li style="color: #555555;">
                                    <a href="http://www.senecacollege.ca/onecard/index.html" target="_blank">OneCard</a><br /><br /></li>
                        <!-- link -->
                                <li style="color: #555555;">
@@ -75,5 +78,9 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
 
     // Removing "Did You Know?" Section by getting the element ID
     var element = document.getElementById("module:_4399_1");
+    element.parentNode.removeChild(element);
+
+    // Removing "Seneca News" Section
+    var element = document.getElementById("module:_3074_1");
     element.parentNode.removeChild(element);
 }
