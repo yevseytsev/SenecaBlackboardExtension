@@ -72,4 +72,8 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                </div>
            
     </div>`;
+
+    // Removing "Did You Know?" Section by getting the element ID
+    var element = document.getElementById("module:_4399_1");
+    element.parentNode.removeChild(element);
 }
