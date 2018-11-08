@@ -1,0 +1,21 @@
+{
+	"name": "Seneca Blackboard Extension",
+	"version": "0.0.0",
+	"description": "Changes up the GUI of Seneca Blackboard to be more user friendly",
+	"homepage_url": "https://github.com/yevseytsev/SenecaBlackboardExtension",
+	"manifest_version": 2,
+	"permissions": [
+		"https://my.senecacollege.ca/*"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://my.senecacollege.ca/*"
+            ],
+            "js": ["homepage-guest.js"]
+		}
+	],
+	"icons": {
+		"128": ".images/icon.png"
+	}
+}
