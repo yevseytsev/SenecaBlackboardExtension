@@ -30,7 +30,7 @@ Following features will be added to the Seneca Blackboard :
 # How to contribute?
 
 FOR THIS REPOSITORY IT IS MANDATORY TO CREATE ISSUE OR COMMENT UNDER EXISTING ISSUE BEFORE CREATING THE PULL REQUEST.
-Here are the [open issues](https://github.com/yevseytsev/SenecaBlackboardExtension/issues)
+Here are the [open issues](https://github.com/yevseytsev/SenecaBlackboardExtension/issues).
 We would be happy to accept your impovements to Seneca BlackBoard extension for Google Chrome! 
 
 ## Intro
@@ -41,15 +41,14 @@ We would be happy to accept your impovements to Seneca BlackBoard extension for 
 
 ## Workflow
 
+1. Create issue or comment under existing issue, and make sure nobody else works on this issue
 1. Clone the repo:
-
     ```sh
     git clone https://github.com/yevseytsev/SenecaBlackboardExtension
     cd SenecaBlackboardExtension
     npm install
     ```
-1. Create issue or comment under existing issue, and make sure nobody else works on this issue
-1. Create branch corresponding to your issue
+1. Create a branch corresponding to your issue
 1. Add your files/code to this branch
 1. Build your code
 1. Test your code in Google Chrome
@@ -58,8 +57,8 @@ We would be happy to accept your impovements to Seneca BlackBoard extension for 
 ## Loading extension to Google Chrome for testing
 After building, the extension can be loaded to Google Chrome
 <ol>
-<li>Open <code>chrome://extensions</code>;
-<li>Check the <strong>Developer mode</strong> checkbox;
-<li>Click on the <strong>Load unpacked extension</strong> button;
-<li>Select the folder <code>SenecaBlackboardExtension/</code>.
+<li>Open <code>chrome://extensions</code>
+<li>Check the <strong>Developer mode</strong> checkbox
+<li>Click on the <strong>Load Unpacked Extension</strong> button
+<li>Select the folder <code>SenecaBlackboardExtension/</code>
 </ol>
