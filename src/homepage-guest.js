@@ -73,7 +73,18 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
            
     </div>`;
 
+ 
+}
+    // The following code will activiate regardless of whether the user is logged in or not
+
     // Removing "Did You Know?" Section by getting the element ID
     var element = document.getElementById("module:_4399_1");
     element.parentNode.removeChild(element);
-}
+
+    // Removing "Seneca Spotlight" Section by getting the element ID
+    element = document.getElementById("module:_3075_1");
+    element.parentNode.removeChild(element);
+
+    // Removing "Seneca News" Section by getting the element ID
+    element = document.getElementById("module:_3074_1");
+    element.parentNode.removeChild(element);
