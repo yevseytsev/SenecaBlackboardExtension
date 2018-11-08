@@ -77,6 +77,7 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
     var element = document.getElementById("module:_4399_1");
     element.parentNode.removeChild(element);
 
+    // Removing "Seneca Spotlight"
     var element = document.getElementById("module:_3075_1");
     element.parentNode.removeChild(element);
 }
