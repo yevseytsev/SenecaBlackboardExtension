@@ -29,6 +29,9 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                        <!-- link -->
                                <li style="color: #555555;">
                                    <a href="https://studenterp.senecacollege.ca/psp/ps/?cmd=login" target="_blank"><b>Student Centre</b></a> <br /><br /></li>
+                       <!-- link -->
+                               <li style="color: #555555;">
+                                   <a href="https://inside.senecacollege.ca/its/support/myseneca/" target="_blank"><b>My.Seneca Help</b></a> <br /><br /></li>
                        <hr /> <br />
                        <!-- link -->
                                <li style="color: #555555;">
