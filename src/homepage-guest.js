@@ -33,6 +33,11 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                                <li style="color: #555555;">
                                    <a href="https://inside.senecacollege.ca/its/support/myseneca/" target="_blank"><b>My.Seneca Help</b></a> <br /><br /></li>
                        <hr /> <br />
+
+                       <!-- Start of Collapsible Seneca Services -->
+                       <details>
+                       <summary style="color: red; font-size: 18px"> More Seneca Services </summary>
+                       </br>
                        <!-- link -->
                                <li style="color: #555555;">
                                    <a href="http://www.senecacollege.ca/onecard/index.html" target="_blank">OneCard</a><br /><br /></li>
@@ -69,8 +74,9 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                        <!-- link -->
                                <li style="color: #555555;">
                                    <a href="http://www.senecacollege.ca/policies/" target="_blank">Policies</a><br /><br /></li>
+                
                        </ul>
-                        
+                    </details>
            
                </div>
            
