@@ -33,10 +33,15 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                 <li style="color: #555555;">
                     <a href="https://inside.senecacollege.ca/its/support/myseneca/" target="_blank">My.Seneca Help</a> <br /><br />
                 </li>
-
+                <li style="color: #555555;">
+                <a href="https://ict.senecacollege.ca/" target="_blank">Seneca ICT</a> <br /><br />
+                </li>
+                <li style="color: #555555;">
+                 <a href="http://www.senecacollege.ca/international.html" target="_blank">Seneca International</a> <br /><br />
+                </li>
                 <!-- Start of Collapsible Seneca Services -->
                 <details>
-                    <summary style="color: red; font-size: 18px"> More Seneca Services </summary>
+                    <summary style="color: red; font-size: 16px"> More Seneca Services </summary>
                     </br>
                     <ul>
                         <!-- link -->
