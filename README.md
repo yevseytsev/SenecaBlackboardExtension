@@ -11,7 +11,7 @@ You can disscuss your suggestions by joining out our [Slack Channel](https://joi
 
 Following useless information will be removed from the Seneca Blackboard :
 - [ ] Seneca News
-- [ ] Seneca Spotlight
+- [X] Seneca Spotlight
 - [X] Did You Know?
 - [ ] Quickly
 - [ ] Useless announcements (Full-Time Student News, Student News)

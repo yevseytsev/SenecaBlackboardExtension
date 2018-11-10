@@ -12,10 +12,10 @@
 			"matches": [
 				"https://my.senecacollege.ca/*"
             ],
-            "js": ["homepage-guest.js"]
+            "js": ["src/homepage-guest.js"]
 		}
 	],
 	"icons": {
-		"128": ".images/icon.png"
+    "128": "./images/icon.png"
 	}
 }
