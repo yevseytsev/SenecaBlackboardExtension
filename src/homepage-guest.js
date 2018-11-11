@@ -95,7 +95,7 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
        </br>
        </br>
        </br>
-		// add button 
+		// add button to switch to original version
 		<div>
 		<h3>Switch to original version</h3>
                <a href="https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1">
