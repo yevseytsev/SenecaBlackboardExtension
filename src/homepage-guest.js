@@ -92,7 +92,17 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                 </details>
             </ul>
         </div>
-
+       </br>
+       </br>
+       </br>
+		// add button 
+		<div>
+		<h3>Switch to original version</h3>
+               <a href="https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1">
+               <input name="button" type="button" id="bt"
+               value="Switch Version" />
+                </a>
+		</div>
     </div>`;
 
     // Removing "Did You Know?" Section by getting the element ID
