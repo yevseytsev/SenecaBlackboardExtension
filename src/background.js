@@ -7,7 +7,8 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
         chrome.storage.sync.get({
             collegeServices: true,
             removeDyk: true,
-            removeSpotlight: true
+            removeSpotlight: true,
+            removeNews: true
             },
         // This will check each stored value for the options and execute the script
         // for each option if it was turned on
@@ -25,6 +26,11 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
             if (items.removeSpotlight == true) {
                 chrome.tabs.executeScript({
                     file: 'src/features/remove-spotlight.js'
+                });
+            }
+            if (items.removeNews == true) {
+                chrome.tabs.executeScript({
+                    file: 'src/features/remove-news.js'
                 });
             }
         });
