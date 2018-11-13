@@ -33,10 +33,15 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                 <li style="color: #555555;">
                     <a href="https://inside.senecacollege.ca/its/support/myseneca/" target="_blank">My.Seneca Help</a> <br /><br />
                 </li>
-
+                <li style="color: #555555;">
+                <a href="https://ict.senecacollege.ca/" target="_blank">Seneca ICT</a> <br /><br />
+                </li>
+                <li style="color: #555555;">
+                 <a href="http://www.senecacollege.ca/international.html" target="_blank">Seneca International</a> <br /><br />
+                </li>
                 <!-- Start of Collapsible Seneca Services -->
                 <details>
-                    <summary style="color: red; font-size: 18px"> More Seneca Services </summary>
+                    <summary style="color: red; font-size: 16px"> More Seneca Services </summary>
                     </br>
                     <ul>
                         <!-- link -->
@@ -92,7 +97,17 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                 </details>
             </ul>
         </div>
-
+       </br>
+       </br>
+       </br>
+		// add button to switch to original version
+		<div>
+		<h3>Switch to original version</h3>
+               <a href="https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1">
+               <input name="button" type="button" id="bt"
+               value="Switch Version" />
+                </a>
+		</div>
     </div>`;
 
  
