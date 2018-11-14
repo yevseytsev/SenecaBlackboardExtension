@@ -12,7 +12,8 @@
 			"matches": [
 				"https://my.senecacollege.ca/*"
             ],
-            "js": ["src/homepage-guest.js"]
+            "js": ["src/homepage-guest.js"],
+			"css": ["src/dark-theme.css"]
 		}
 	],
 	"icons": {
