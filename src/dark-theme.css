@@ -14,16 +14,22 @@ div.lb-wrapper {
     padding: 2px !important;
 }
 
+/* Did you know and Seneca Spotlight sections */
+table {
+    background-color: #555555 !important;
+}
 th, .smallCell, .typeWidth {
     background-color: #444444 !important;
     border-color: #777777 !important;
     color: #DDDDDD !important;
 }
 
+/* Log in text */
 #login ul li {
     background-color: #555555 !important;
 }
 
+/* Titles in boxes (e.g. Login Here, College Services etc.) */
 h2 {
     background-color: #444444 !important;
 }
@@ -47,6 +53,7 @@ p, em, label, h3, span, h4 {
     color: #DDDDDD !important;
 }
 
+/* Text in divs */
 div p {
     background-color: #333333 !important;
 }
@@ -78,6 +85,7 @@ div.paneTabs, ul#paneTabs {
     background-color: #555555 !important;
 }
 
+/* My.Seneca Tools and Notification Dashboard Button Text */
 ul#paneTabs li a {
     color: #DDDDDD !important;
 }
@@ -85,16 +93,4 @@ ul#paneTabs li a {
 /* Small buttons inside BB (View Description and Grading Criteria under MyGrades */
 input.genericButton {
     color: #FF4040 !important;
-}
-
-#outer_left_stream_mygrades {
-    background-color: #444444 !important;
-}
-
-#right_stream_mygrades {
-    background-color: #555555 !important;
-}
-
-body#testid {
-    color: #DDDDDD !important;
 }
