@@ -7,6 +7,15 @@ Feel free to add new issues, work on them and submit your pull requests for revi
 You can disscuss your suggestions by joining out our [Slack Channel](https://join.slack.com/t/seneca-web-extension/shared_invite/enQtNDczNTEwMzE5NzgzLTA1NTk0YzIxMzM4YTcwYTQ5ZDNjMjZiMDRhMGUxZGIyODQ3OWVjZGIwZWJkNGFmYTk0ZGMzNDE2NTRlMmM2ZTM).
 
 
+# How to Install for Users (for devlopers, see CONTRIBUTING.md)
+
+1. Click Clone or download, and click Download ZIP file
+2. Extract the zip file, which creates a folder called "SenecaBlackboardExtension-master"
+3. Go to chrome://extensions/
+4. Click load unpacked
+5. Select the extracted folder called "SenecaBlackboardExtension-master" (not the compressed zip file)
+6. Click OK, and the extension will be installed
+
 # What we want to do?
 
 Following useless information will be removed from the Seneca Blackboard :
