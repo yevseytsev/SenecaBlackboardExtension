@@ -13,9 +13,10 @@ We would be happy to accept your impovements to Seneca BlackBoard extension for 
 ## Workflow
 
 1. Create issue or comment under existing issue, and make sure nobody else works on this issue
+1. [Fork the repo](https://help.github.com/articles/fork-a-repo/)
 1. Clone the repo:
     ```sh
-    git clone https://github.com/yevseytsev/SenecaBlackboardExtension
+    git clone https://github.com/{your-github-username}/SenecaBlackboardExtension
     cd SenecaBlackboardExtension
     npm install
     ```

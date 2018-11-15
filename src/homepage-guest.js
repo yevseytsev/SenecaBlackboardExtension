@@ -1,10 +1,9 @@
 // Checks if the URL is the Seneca BB Homepage (When NOT signed-in)
-if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1")
-{
+if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1") {
     // Changes the links in the "College Services" box
     // Can directly edit the HTML below to replace what's in the box
-    document.getElementById("module:_3073_1").innerHTML = 
-    `<!-- extid:3073: --> 
+    document.getElementById("module:_3073_1").innerHTML =
+        `<!-- extid:3073: --> 
     <div class="edit_controls">
     </div>     
      
@@ -14,12 +13,23 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
    
     <div class="collapsible" style="overflow: auto;">
         <div style="border-style: solid; border-color: #efefef; background-color: #ffffff; font-family: Arial,Helvetica,sans-serif; margin:0px 0px 0px 0px;">
+            <!-- add a button to change the size and style of the font -->
+            <div>
+            <h3>Change the Font Size and Style</h3>
+            <div>
+                <input name="button" type="button" id="txt-large" value="Make Text Bigger" />
+                <input name="button" type="button" id="txt-small" value="Make Text Smaller" />
+                <input name="button" type="button" id="txt-original" value="Original Text Size" />
+            </div>
+            <div>
+                <input name="button" type="button" id="txt-style" value="Random Text Style" />
+            </div>
             <!-- heading -->
             <div style="margin: 5px 5px 5px 10px;">  
                 <p></p>
             </div>
 
-            <ul style="margin: 2px 2px 2px 25px;">
+            <ul style="margin: 2px 2px 2px 25px;" id="text"> <!-- add "text" id -->
                 <br />
                 <!-- link -->
                 <li style="color: #555555;">
@@ -33,10 +43,15 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                 <li style="color: #555555;">
                     <a href="https://inside.senecacollege.ca/its/support/myseneca/" target="_blank">My.Seneca Help</a> <br /><br />
                 </li>
-
+                <li style="color: #555555;">
+                <a href="https://ict.senecacollege.ca/" target="_blank">Seneca ICT</a> <br /><br />
+                </li>
+                <li style="color: #555555;">
+                 <a href="http://www.senecacollege.ca/international.html" target="_blank">Seneca International</a> <br /><br />
+                </li>
                 <!-- Start of Collapsible Seneca Services -->
                 <details>
-                    <summary style="color: red; font-size: 18px"> More Seneca Services </summary>
+                    <summary style="color: red; font-size: 16px"> More Seneca Services </summary>
                     </br>
                     <ul>
                         <!-- link -->
@@ -92,7 +107,16 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                 </details>
             </ul>
         </div>
-
+       </br>
+       </br>
+       </br>
+		<div>
+		<h3>Switch to original version</h3>
+               <a href="https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1">
+               <input name="button" type="button" id="bt"
+               value="Switch Version" />
+                </a>
+		</div>
     </div>`;
 }
 
@@ -173,22 +197,20 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
     document.getElementById("module:_4360_1").innerHTML = cal;
 }
 
+// add event listner to the button that executes the function
+document.getElementById('txt-large').addEventListener('click', () => {
+    resizeText(2);
+});
+
+document.getElementById('txt-small').addEventListener('click', () => {
+    resizeText(-2);
+});
+
+document.getElementById('txt-original').addEventListener('click', () => {
+    originalTextSize();
+});
 
 
-
-    // The following code will activiate regardless of whether the user is logged in or not
-
-    // Removing "Did You Know?" Section by getting the element ID
-    var element = document.getElementById("module:_4399_1");
-    element.parentNode.removeChild(element);
-
-    // Removing "Seneca Spotlight" Section by getting the element ID
-    element = document.getElementById("module:_3075_1");
-    element.parentNode.removeChild(element);
-
-    // Removing "Seneca News" Section by getting the element ID
-    element = document.getElementById("module:_3074_1");
-    element.parentNode.removeChild(element);
-
-
-    
+document.getElementById('txt-style').addEventListener('click', () => {
+    changeTextStyle();
+});

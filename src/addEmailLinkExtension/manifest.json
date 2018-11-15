@@ -1,0 +1,20 @@
+{
+    "name": "AddEmailLink",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "add an email link to the seneca college web site default page",
+    "browser_action": {
+        "default_title": "email",
+        "default_icon":"icon.png"
+        
+    },
+"content_scripts": [
+   {
+      "matches": ["https://my.senecacollege.ca/*"],
+      "js": ["contentScript.js"]
+   }
+ ],
+"permissions": [
+    "tabs"
+  ]
+}
