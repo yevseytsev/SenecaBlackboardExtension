@@ -281,6 +281,31 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
     element = document.getElementById("module:_3074_1");
     element.style.display = "none";
 
+    element = document.querySelectorAll("h2");
+    for (let i=0; i<element.length; i++) {
+        element[i].style.backgroundColor = "#E6E6FA";
+        element[i].style.border = "4px";
+    }
+
+    element = document.getElementsByClassName("portlet");
+    for (let i=0; i<element.length; i++) {
+        element[i].style.border = "1px solid grey";
+        element[i].style.borderRadius = "4px";
+    }
+
+    var elements = document.getElementsByClassName("button");
+    for (let i=0; i<elements.length; i++) {
+        elements[i].style.color = "#fff";
+        elements[i].style.fontSize = "17px";
+        elements[i].style.backgroundColor = "#337ab7";
+        elements[i].style.border = "#2e6da4";
+        elements[i].style.borderRadius = "4px";
+        elements[i].style.width = "auto";
+        elements[i].style.height = "auto";
+        elements[i].style.padding = "5px";
+        elements[i].style.fontWeight = "normal";
+    }
+
 // add event listner to the button that executes the function
 document.getElementById('txt-large').addEventListener('click', () => {
     resizeText(2);
