@@ -268,6 +268,19 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
     document.getElementById("module:_4036_1").innerHTML = tot;
 }
 
+
+    // Removing "Did You Know?" Section by getting the element ID
+    var element = document.getElementById("module:_4399_1");
+    element.style.display = "none";
+
+    // Removing "Seneca Spotlight" Section by getting the element ID
+    element = document.getElementById("module:_3075_1");
+    element.style.display = "none";
+
+    // Removing "Seneca News" Section by getting the element ID
+    element = document.getElementById("module:_3074_1");
+    element.style.display = "none";
+
 // add event listner to the button that executes the function
 document.getElementById('txt-large').addEventListener('click', () => {
     resizeText(2);
@@ -285,4 +298,5 @@ document.getElementById('txt-original').addEventListener('click', () => {
 document.getElementById('txt-style').addEventListener('click', () => {
     changeTextStyle();
 });
+
 
