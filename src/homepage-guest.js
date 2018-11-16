@@ -195,6 +195,20 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
     cal += '</td></tr></table></table>';
 
     document.getElementById("module:_4360_1").innerHTML = cal;
+
+
+    
+   /**** Collapsible for Announcements ****/
+   var output; //to store the contents of announcements
+   output = document.getElementById("module:_4036_1").innerHTML;
+    `<!-- extid:_4036_1: -->`
+    var tot; //store the overall
+    tot = '<details>';
+    tot += '<summary style="color: red; font-size: 16px">Announcements</summary>';
+    tot += output;
+    tot += '</details>';
+
+    document.getElementById("module:_4036_1").innerHTML = tot;
 }
 
 // add event listner to the button that executes the function
@@ -214,3 +228,4 @@ document.getElementById('txt-original').addEventListener('click', () => {
 document.getElementById('txt-style').addEventListener('click', () => {
     changeTextStyle();
 });
+
