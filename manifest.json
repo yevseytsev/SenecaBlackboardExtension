@@ -13,7 +13,7 @@
 				"https://my.senecacollege.ca/*"
             ],
             "js": ["src/homepage-guest.js"],
-			"css": ["src/dark-theme.css"]
+			"css": ["src/seneca-new-theme.css"]
 		}
 	],
 	"browser_action": {
