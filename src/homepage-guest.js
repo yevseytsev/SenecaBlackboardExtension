@@ -74,12 +74,12 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
             <div>
             <h3>Change the Font Size and Style</h3>
             <div>
-                <input name="button" type="button" id="txt-large" value="Make Text Bigger" />
-                <input name="button" type="button" id="txt-small" value="Make Text Smaller" />
-                <input name="button" type="button" id="txt-original" value="Original Text Size" />
+                <input name="button" class="button" type="button" id="txt-large" value="Make Text Bigger" />
+                <input name="button" class="button" type="button" id="txt-small" value="Make Text Smaller" />
+                <input name="button" class="button" type="button" id="txt-original" value="Original Text Size" />
             </div>
             <div>
-                <input name="button" type="button" id="txt-style" value="Random Text Style" />
+                <input name="button" class="button" type="button" id="txt-style" value="Random Text Style" />
             </div>
             <!-- heading -->
             <div style="margin: 5px 5px 5px 10px;">  
@@ -170,11 +170,13 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
 		<div>
 		<h3>Switch to original version</h3>
                <a href="https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1">
-               <input name="button" type="button" id="bt"
+               <input name="button" class="button" type="button" id="bt"
                value="Switch Version" />
                 </a>
 		</div>
     </div>`;
+
+    document.getElementById("column0").appendChild(document.getElementById("module:_3073_1"));
 }
 
 
