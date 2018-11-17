@@ -318,34 +318,12 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
 }
 
 
-
-    /* // Removing "Did You Know?" Section by getting the element ID
-    var element = document.getElementById("module:_4399_1");
-    if (element) {
-        element.style.display = "none";
-    }
-
-    // Removing "Seneca Spotlight" Section by getting the element ID
-    element = document.getElementById("module:_3075_1");
-    if (element) {
-        element.style.display = "none";
-    }
-    // Removing "Seneca News" Section by getting the element ID
-    element = document.getElementById("module:_3074_1");
-    if (element) {
-        element.style.display = "none";
-    }
-    // Removing 'Qwickly' Section
-    var qwicklyElement = document.getElementById("module:_4396_1");
-    if (qwicklyElement) {
-        qwicklyElement.style.display = "none";
-    }*/ 
-
     var pendingRemoveSections = [
         "module:_4399_1",
         "module:_3075_1",
         "module:_3074_1",
-        "module:_4396_1"
+        "module:_4396_1",
+        "module:_4388_1"
     ];
 
     pendingRemoveSections.forEach(section => {
