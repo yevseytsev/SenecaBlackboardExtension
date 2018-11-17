@@ -1,0 +1,82 @@
+div, td {
+    background-color: #AFE0F7 !important;
+    color: #3210F1 !important;
+    border-color: #3A069C !important;
+}
+ /* Removes large whitespace on top of guest homepage */
+div.locationPane div.contentPaneWide div#content div.container {
+    margin-top: 0% !important;
+}
+ /* Pop-up boxes */
+div.lb-wrapper {
+    padding: 2px !important;
+}
+ th, .smallCell, .typeWidth {
+    background-color: #AFE0F7 !important;
+    border-color: #3A069C !important;
+    color: #3210F1 !important;
+}
+ #login ul li {
+    background-color: #AFE0F7 !important;
+}
+ h2 {
+    background-color: #AFE0F7 !important;
+}
+/* Thick box borders inside BlackBoard once logged in*/
+.b1, .b2, .b3, .b4, .b4b, .b3b, .b2b, .b1b {
+    background-color: #3A069C !important;
+}
+ /* Login section (username and password) */
+#login ul li {
+    color: #3210F1 !important;
+}
+ /* All unwrapped text */
+body {
+    color: #3210F1 !important;
+}
+ /* Other text on the homepage */
+p, em, label, h3, span, h4 {
+    color: #3210F1 !important;
+}
+ div p {
+    background-color: #AFE0F7 !important;
+}
+ /* Brightens the text that was red on the original page*/
+a, summary {
+    color: #FF4040 !important;
+}
+ /* Little tabs over certain tables */
+#tab_20101223085537, #tab_20101223090238,
+#tab_20151028101507, #tab_20151028101628,
+#tab_20151028101103, #tab_20151028101324,
+#tab_20061123134214, #tab_20061123132217,
+#tab_20061123135107, #tab_20061123135844 {
+    background-color: #AFE0F7 !important;
+    color: #3210F1 !important;
+}
+ /* User Drop Down Menu Once Logged In */
+#vertical_container span, #global_nav_tools_section-title span, 
+#global_nav_settings_section-title span, #global-nav-link,
+#global-nav-flyout, #global-list-tools, #global-nav-tools {
+    background-color: #AFE0F7 !important;
+}
+ /* My.Seneca Home and Notifications Dashboard */
+div.paneTabs, ul#paneTabs {
+    background-color: #AFE0F7 !important;
+}
+ ul#paneTabs li a {
+    color: #3210F1 !important;
+}
+ /* Small buttons inside BB (View Description and Grading Criteria under MyGrades */
+input.genericButton {
+    color: #FF4040 !important;
+}
+ #outer_left_stream_mygrades {
+    background-color: #AFE0F7 !important;
+}
+ #right_stream_mygrades {
+    background-color: #AFE0F7 !important;
+}
+ body#testid {
+    color: #3210F1 !important;
+} 
