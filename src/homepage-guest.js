@@ -345,6 +345,7 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
         "module:_4399_1",
         "module:_3075_1",
         "module:_3074_1",
+        "module:_3925_1",
         "module:_4396_1"
     ];
 
