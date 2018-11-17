@@ -316,23 +316,38 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
 }
 
 
-    // Removing "Did You Know?" Section by getting the element ID
-    var element = document.getElementById("module:_4399_1");
-    element.style.display = "none";
+    // // Removing "Did You Know?" Section by getting the element ID
+    // var element = document.getElementById("module:_4399_1");
+    // element.style.display = "none";
 
-    // Removing "Seneca Spotlight" Section by getting the element ID
-    element = document.getElementById("module:_3075_1");
-    element.style.display = "none";
+    // // Removing "Seneca Spotlight" Section by getting the element ID
+    // element = document.getElementById("module:_3075_1");
+    // element.style.display = "none";
 
-    // Removing "Seneca News" Section by getting the element ID
-    element = document.getElementById("module:_3074_1");
-    element.style.display = "none";
+    // // Removing "Seneca News" Section by getting the element ID
+    // element = document.getElementById("module:_3074_1");
+    // element.style.display = "none";
 
-    // Removing 'Qwickly' Section
-    var qwicklyElement = document.getElementById("module:_4396_1");
-    if (qwicklyElement) {
-        qwicklyElement.style.display = "none";
-    }
+    // // Removing 'Qwickly' Section
+    // var qwicklyElement = document.getElementById("module:_4396_1");
+    // if (qwicklyElement) {
+    //     qwicklyElement.style.display = "none";
+    // }
+
+    var pendingRemoveSections = [
+        "module:_4399_1",
+        "module:_3075_1",
+        "module:_3074_1",
+        "module:_4396_1"
+    ];
+
+    pendingRemoveSections.forEach(section => {
+        const element = document.getElementById(section);
+        if (element) {
+            element.style.display = "none";
+        }
+    });
+
 
 // add event listner to the button that executes the function
 var txtlargeElement = document.getElementById('txt-large');
