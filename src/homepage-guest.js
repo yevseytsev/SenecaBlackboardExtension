@@ -97,12 +97,12 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
             <div>
             <h3>Change the Font Size and Style</h3>
             <div>
-                <input name="button" type="button" id="txt-large" value="Make Text Bigger" />
-                <input name="button" type="button" id="txt-small" value="Make Text Smaller" />
-                <input name="button" type="button" id="txt-original" value="Original Text Size" />
+                <input name="button" class="button" type="button" id="txt-large" value="Make Text Bigger" />
+                <input name="button" class="button" type="button" id="txt-small" value="Make Text Smaller" />
+                <input name="button" class="button" type="button" id="txt-original" value="Original Text Size" />
             </div>
             <div>
-                <input name="button" type="button" id="txt-style" value="Random Text Style" />
+                <input name="button" class="button" type="button" id="txt-style" value="Random Text Style" />
             </div>
             <!-- heading -->
             <div style="margin: 5px 5px 5px 10px;">  
@@ -203,11 +203,13 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
 		<div>
 		<h3>Switch to original version</h3>
                <a href="https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1">
-               <input name="button" type="button" id="bt"
+               <input name="button" class="button" type="button" id="bt"
                value="Switch Version" />
                 </a>
 		</div>
     </div>`;
+
+    document.getElementById("column0").appendChild(document.getElementById("module:_3073_1"));
 }
 
 
@@ -353,6 +355,31 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
         }
     });
 
+
+    element = document.querySelectorAll("h2");
+    for (let i=0; i<element.length; i++) {
+        element[i].style.backgroundColor = "#E6E6FA";
+        element[i].style.border = "4px";
+    }
+
+    element = document.getElementsByClassName("portlet");
+    for (let i=0; i<element.length; i++) {
+        element[i].style.border = "1px solid grey";
+        element[i].style.borderRadius = "4px";
+    }
+
+    var elements = document.getElementsByClassName("button");
+    for (let i=0; i<elements.length; i++) {
+        elements[i].style.color = "#fff";
+        elements[i].style.fontSize = "17px";
+        elements[i].style.backgroundColor = "#337ab7";
+        elements[i].style.border = "#2e6da4";
+        elements[i].style.borderRadius = "4px";
+        elements[i].style.width = "auto";
+        elements[i].style.height = "auto";
+        elements[i].style.padding = "5px";
+        elements[i].style.fontWeight = "normal";
+    }
 
 // add event listner to the button that executes the function
 var txtlargeElement = document.getElementById('txt-large');
