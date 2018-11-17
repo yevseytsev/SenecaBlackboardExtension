@@ -206,9 +206,9 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
     var f_td = '<td width="300" ><center>';
     var l_td = '</center></td>';
 
-    cal += '<caption>' + "Calendar" + '</caption';
-    cal = '<table border=1 cellspacing=0 cellpading=1 bordercolor=BBBBBB><caption style="padding:5px 0 3px 12px; font-weight: bolder; font-size: 1.1rem; background-color: #c2c2c2">' 
-            + " Calendar " + '</caption<tr><td>';
+    cal = '<details open>';
+    cal += '<summary style="padding:5px 0 3px 12px; font-weight: bolder; font-size: 1.1rem; background-color: #c2c2c2">Calendar</summary>';
+    cal += '<tr><td>';
     cal += '<table border=0 cellspacing=0 cellpading=2>' + f_tr;
     cal += '<td COLSPAN="' + each_days + '" bgcolor="#EFEFEF" ><center><b>';
     cal += '<div style="color: red;">' + each_month[month] + '   ' + year + '</b>' + l_td + l_tr + '</div>';
@@ -249,7 +249,7 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
         }
         Calendar.setDate(Calendar.getDate() + 1);
     }
-    cal += '</td></tr></table></table>';
+    cal += '</td></tr></table></table></details>';
 
     document.getElementById("module:_4360_1").innerHTML = cal;
 
@@ -260,12 +260,26 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
    output = document.getElementById("module:_4036_1").innerHTML;
     `<!-- extid:_4036_1: -->`
     var tot; //store the overall
-    tot = '<details>';
-    tot += '<summary style="color: red; font-size: 16px">Announcements</summary>';
+    tot = '<details open>';
+    tot += '<summary style="padding:5px 0 3px 12px; font-weight: bolder; font-size: 1.1rem; background-color: #c2c2c2">Announcements</summary>';
     tot += output;
     tot += '</details>';
 
     document.getElementById("module:_4036_1").innerHTML = tot;
+
+
+   /**** Collapsible for College Services ****/
+   var output; //to store the contents of announcements
+   output = document.getElementById("module:_3077_1").innerHTML;
+    `<!-- extid:_3077_1: -->`
+    var tot; //store the overall
+    tot = '<details open>';
+    tot += '<summary style="padding:5px 0 3px 12px; font-weight: bolder; font-size: 1.1rem; background-color: #c2c2c2">Services</summary>';
+    tot += output;
+    tot += '</details>';
+
+    document.getElementById("module:_3077_1").innerHTML = tot;
+
 }
 
 
