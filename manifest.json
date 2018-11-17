@@ -5,15 +5,26 @@
 	"homepage_url": "https://github.com/yevseytsev/SenecaBlackboardExtension",
 	"manifest_version": 2,
 	"permissions": [
-		"https://my.senecacollege.ca/*"
+		"https://my.senecacollege.ca/*",
+		"https://studenterp.senecacollege.ca/*"
 	],
 	"content_scripts": [
 		{
 			"matches": [
-				"https://my.senecacollege.ca/*"
+				"https://my.senecacollege.ca/*",
+				"https://studenterp.senecacollege.ca/*"
             ],
-            "js": ["src/homepage-guest.js"],
-			"css": ["src/dark-theme.css"]
+			"js": ["/src/homepage-guest.js", "/src/addEmailLinkExtension/contentScript.js", "/src/studentcenterpage.js"]
+		}
+	],
+	"background": {
+		"scripts": ["src/homepage-guest.js"]
+	},
+	"browser_action": {
+		"default_icon": "./images/icon128.png"
+	},
+  "css": ["src/dark-theme.css"]
+			
 		}
 	],
 	"icons": {
