@@ -40,10 +40,10 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                  <a href="http://www.senecacollege.ca/international.html" target="_blank">Seneca International</a> <br /><br />
                 </li>
                 <li style="color: #555555;">
-                    <a href="https://www.senecacollege.ca/registrar/dates/" target="_blank">Important Academic Dates</a> <br /><br />
+                    <a href="http://www.senecacollege.ca/registrar/dates/" target="_blank">Important Academic Dates</a> <br /><br />
                 </li>
                 <li style="color: #555555;">
-                <a href="https://library.senecacollege.ca/" target="_blank">Seneca Libraries</a> <br /><br />
+                <a href="http://library.senecacollege.ca/" target="_blank">Seneca Libraries</a> <br /><br />
                 </li>
                 <li style="color: #555555;">
                  <a href="https://inside.senecacollege.ca/its/support/myseneca/faculty/course_management/introduction.html" target="_blank">Seneca Faculty and Staff</a> <br /><br />
