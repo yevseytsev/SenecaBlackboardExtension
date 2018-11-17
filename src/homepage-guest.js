@@ -288,21 +288,47 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
     }
 
 // add event listner to the button that executes the function
-document.getElementById('txt-large').addEventListener('click', () => {
-    resizeText(2);
-});
+var txtlargeElement = document.getElementById('txt-large');
+if (txtlargeElement) {
+    txtlargeElement.addEventListener('click', () => {
+        resizeText(2);
+    });
+}
+// document.getElementById('txt-large').addEventListener('click', () => {
+//     resizeText(2);
+// });
 
-document.getElementById('txt-small').addEventListener('click', () => {
-    resizeText(-2);
-});
+var txtsmallElement = document.getElementById('txt-small');
+if (txtsmallElement) {
+    txtsmallElement.addEventListener('click', () => {
+        resizeText(-2);
+    });
+}
 
-document.getElementById('txt-original').addEventListener('click', () => {
-    originalTextSize();
-});
+// document.getElementById('txt-small').addEventListener('click', () => {
+//     resizeText(-2);
+// });
 
+var txtoriginalElement = document.getElementById('txt-original');
+if (txtoriginalElement) {
+    txtoriginalElement.addEventListener('click', () => {
+        originalTextSize();
+    });
+}
 
-document.getElementById('txt-style').addEventListener('click', () => {
-    changeTextStyle();
-});
+// document.getElementById('txt-original').addEventListener('click', () => {
+//     originalTextSize();
+// });
+
+var txtstyleElement = document.getElementById('txt-style');
+if (txtstyleElement) {
+    txtstyleElement.addEventListener('click', () => {
+        changeTextStyle();
+    });
+}
+
+// document.getElementById('txt-style').addEventListener('click', () => {
+//     changeTextStyle();
+// });
 
 
