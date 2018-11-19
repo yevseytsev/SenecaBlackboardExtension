@@ -8,25 +8,20 @@
 		"https://my.senecacollege.ca/*",
 		"https://studenterp.senecacollege.ca/*"
 	],
-	"content_scripts": [
-		{
-			"matches": [
-				"https://my.senecacollege.ca/*",
-				"https://studenterp.senecacollege.ca/*"
-            ],
-			"js": ["/src/homepage-guest.js", "/src/addEmailLinkExtension/contentScript.js", "/src/studentcenterpage.js"]
-		}
-	],
+	"content_scripts": [{
+		"matches": [
+			"https://my.senecacollege.ca/*",
+			"https://studenterp.senecacollege.ca/*"
+		],
+		"js": ["/src/homepage-guest.js", "/src/addEmailLinkExtension/contentScript.js", "/src/studentcenterpage.js"]
+	}],
 	"background": {
 		"scripts": ["src/homepage-guest.js"]
 	},
 	"browser_action": {
 		"default_icon": "./images/icon128.png"
 	},
-  "css": ["src/dark-theme.css"]
-			
-		}
-	],
+	"css": ["src/dark-theme.css"],
 	"icons": {
 		"128": "./images/icon128.png",
 		"48": "./images/icon48.png",
