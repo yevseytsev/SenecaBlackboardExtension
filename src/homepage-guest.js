@@ -292,7 +292,48 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
     
    /**** Collapsible for Announcements ****/
    var output; //to store the contents of announcements
-   output = document.getElementById("module:_4036_1").innerHTML;
+   var announcementsObject = document.getElementById("module:_4036_1");
+   
+   var c = announcementsObject.childNodes;
+   //these 4 numbers cannot be changed or it will break everything!
+   var c = c[7].childNodes;
+   var c = c[3].childNodes;
+   var c = c[1].childNodes;
+   var c = c[2].childNodes;
+   
+   var startOfNonStudentNews = 0;
+   while (true){//ended by break
+	   var count = 0;
+	   if (c[0].className == 'annTitle'){
+		   console.log("found element with annTitle class");
+		   if (c[0].innerHTML != "Student News:" && c[0].innerHTML != "Full-Time Student News:"){
+				console.log("good stuff begins now");
+				var startOfNonStudentNews = 1;
+				break;
+		   }
+	   }
+	   
+	c[0].remove();
+	   
+   }
+  /* for (var i = 0; i < c.length; i++){
+	   if (c[i].className == 'annTitle'){
+		   console.log("found element with annTitle class");
+		   if (c[i].innerHTML != "Student News:" && c[i].innerHTML != "Full-Time Student News:"){
+				console.log("good stuff begins now");
+				var startOfNonStudentNews = 1;
+		   }
+	   }
+	   if (startOfNonStudentNews){
+		   console.log('ok ' + i);
+	   }else{
+			console.log('delet ' + i);
+		   c[0].remove();
+	   }
+	   
+   }*/
+   
+   output = announcementsObject.innerHTML;
     `<!-- extid:_4036_1: -->`
     var tot; //store the overall
     tot = '<details open>';
@@ -318,29 +359,6 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
 }
 
 
-
-    /* // Removing "Did You Know?" Section by getting the element ID
-    var element = document.getElementById("module:_4399_1");
-    if (element) {
-        element.style.display = "none";
-    }
-
-    // Removing "Seneca Spotlight" Section by getting the element ID
-    element = document.getElementById("module:_3075_1");
-    if (element) {
-        element.style.display = "none";
-    }
-    // Removing "Seneca News" Section by getting the element ID
-    element = document.getElementById("module:_3074_1");
-    if (element) {
-        element.style.display = "none";
-    }
-    // Removing 'Qwickly' Section
-    var qwicklyElement = document.getElementById("module:_4396_1");
-    if (qwicklyElement) {
-        qwicklyElement.style.display = "none";
-    }*/ 
-
     var pendingRemoveSections = [
         "module:_4399_1",
         "module:_3075_1",
@@ -348,6 +366,10 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
         "module:_4396_1",
         "module:_907_1",	//Webmail/Outlook
         "module:_3925_1"	//My Organizations Plus
+        "module:_3925_1",
+        "module:_4396_1"
+        "module:_4396_1",
+        "module:_4388_1"
     ];
 
     pendingRemoveSections.forEach(section => {
