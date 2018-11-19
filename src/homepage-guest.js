@@ -363,6 +363,9 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
         "module:_4399_1",
         "module:_3075_1",
         "module:_3074_1",
+        "module:_4396_1",
+        "module:_907_1",	//Webmail/Outlook
+        "module:_3925_1"	//My Organizations Plus
         "module:_3925_1",
         "module:_4396_1"
         "module:_4396_1",
@@ -388,6 +391,12 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
         element[i].style.border = "1px solid grey";
         element[i].style.borderRadius = "4px";
     }
+
+    //Hide "Note: Only the courses that your instructors have activated..."
+    element = document.getElementById("box_border");
+	if (element) {
+		element.style.display = "none";
+	}
 
     var elements = document.getElementsByClassName("button");
     for (let i=0; i<elements.length; i++) {
