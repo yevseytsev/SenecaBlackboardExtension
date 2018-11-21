@@ -1,0 +1,24 @@
+{
+  "name": "SenecaBlackboardExtension",
+  "version": "1.0.0",
+  "description": "This repository is a Google Chrome Extension for the [Seneca Blackboard website](https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1) to improve the UX/UI for better usability. We focus on working with a diverse range of issues with the Seneca Blackboard website.",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint src",
+    "test": "npm run eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinceBackpack/SenecaBlackboardExtension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinceBackpack/SenecaBlackboardExtension/issues"
+  },
+  "homepage": "https://github.com/VinceBackpack/SenecaBlackboardExtension#readme",
+  "devDependencies": {
+    "eslint": "^5.9.0"
+  }
+}
