@@ -1,0 +1,32 @@
+{
+	"name": "Seneca Blackboard Extension",
+	"version": "0.1.0",
+	"description": "This extension changes up the GUI of Seneca Blackboard to be more user friendly",
+	"homepage_url": "https://github.com/yevseytsev/SenecaBlackboardExtension",
+	"manifest_version": 2,
+	"permissions": [
+		"https://my.senecacollege.ca/*"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+			"https://my.senecacollege.ca/*",
+			"https://studenterp.senecacollege.ca/*"
+		],
+			"js": ["src/homepage.js", "src/brigtnessExtension/brightness.js", "/src/addEmailLinkExtension/contentScript.js", "/src/studentcenterpage.js"],
+			"css": ["src/brigtnessExtension/cover.css", "src/cssThemes/dark-theme.css"]
+		}
+	],
+	"browser_action": {
+		"default_icon": "./images/icon128.png"
+	},
+	"background": {
+		"scripts": ["src/homepage.js"]
+	},
+	"icons": {
+		"128": "./images/icon128.png",
+		"48": "./images/icon48.png",
+		"32": "./images/icon32.png",
+		"16": "./images/icon16.png"
+	}
+}
