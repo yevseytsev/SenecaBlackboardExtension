@@ -1,17 +1,16 @@
-// Removing useless sections
+// Get list of useless sections
 var pendingRemoveSections = [
-    "module:_4399_1",
-    "module:_246_1",
-    "module:_4386_1",
-    "module:_3075_1",
-    "module:_3074_1",
-    "module:_4396_1",
-    "module:_907_1",
-    "module:_3925_1",
-    "module:_4396_1",
-    "module:_4388_1",
+    "module:_4399_1", //Did you know?
+    "module:_246_1", //Employee Directory
+    "module:_4386_1", //Course assessment survey
+    "module:_3075_1", //Seneca Spotlight
+    "module:_3074_1", //Seneca News
+    "module:_4396_1", //Qwickly
+    "module:_907_1", //Webmail Seneca Outlook - myseneca.ca
+    "module:_3925_1", //My Organizations Plus
+    "module:_4388_1", //Status of ITS Enterprise Services
 ];
-
+// Remove useless sections
 pendingRemoveSections.forEach(section => {
     const element = document.getElementById(section);
     if (element) {
@@ -310,6 +309,7 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
    var output; //to store the contents of announcements
    var announcementsObject = document.getElementById("module:_4036_1");
    
+   //Remove "Student News:" and "Full-Time Student News:" from annoucements module
    var c = announcementsObject.childNodes;
    //these 4 numbers cannot be changed or it will break everything!
    var c = c[7].childNodes;
@@ -317,18 +317,15 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
    var c = c[1].childNodes;
    var c = c[2].childNodes;
    
-   var startOfNonStudentNews = 0;
    while (true){//ended by break
-	   var count = 0;
 	   if (c[0].className == 'annTitle'){
-		   console.log("found element with annTitle class");
+		   //found element with annTitle class
 		   if (c[0].innerHTML != "Student News:" && c[0].innerHTML != "Full-Time Student News:"){
-				console.log("good stuff begins now");
-				var startOfNonStudentNews = 1;
+				//start of good annoucements. 
 				break;
 		   }
 	   }
-	c[0].remove();
+		c[0].remove();
    }
    
    output = announcementsObject.innerHTML;
@@ -409,9 +406,4 @@ if (txtoriginalElement) {
     });
 }
 
-//var txtstyleElement = document.getElementById('txt-style');
-//if (txtstyleElement) {
- //   txtstyleElement.addEventListener('click', () => {
-       // changeTextStyle();
-  //  });
-//}
+
