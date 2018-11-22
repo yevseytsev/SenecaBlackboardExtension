@@ -1,10 +1,30 @@
-// Check if this is seneca college website
+// Removing useless sections
+var pendingRemoveSections = [
+    "module:_4399_1",
+    "module:_246_1",
+    "module:_4386_1",
+    "module:_3075_1",
+    "module:_3074_1",
+    "module:_4396_1",
+    "module:_907_1",
+    "module:_3925_1",
+    "module:_4396_1",
+    "module:_4388_1",
+];
+
+pendingRemoveSections.forEach(section => {
+    const element = document.getElementById(section);
+    if (element) {
+        element.style.display = "none";
+    }
+});
+
+// Checks if the URL is the Seneca BB Homepage
 if (window.location.href.indexOf("https://my.senecacollege.ca/webapps/") == 0) {
     var badgeElement = document.getElementById('badgeTotalCount');
 
     // If badgeTotalCount element exists ...
     if(badgeElement != null) {
-
         badgeElement.style.visibility = "hidden";
         
         // Simulate 2 click events
@@ -50,11 +70,11 @@ if (window.location.href.indexOf("https://my.senecacollege.ca/webapps/") == 0) {
                     + '-moz-border-radius: 2px 2px 2px 2px;border-radius: 2px 2px 2px 2px;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;'
                     + ' padding: 3px 3px 0;">' + alerts + '</span>';
             }
-
         }, 1000);
     }
 }
 
+// Checks if the URL is the Seneca BB Homepage
 if(window.location.href.indexOf("https://my.senecacollege.ca/webapps/") == 0) {
     var toolsElement = document.getElementById('module:_2611_1');
     
@@ -77,7 +97,6 @@ if(window.location.href.indexOf("https://my.senecacollege.ca/webapps/") == 0) {
     }
 }
 
-
 // Checks if the URL is the Seneca BB Homepage (When NOT signed-in)
 if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1") {
     // Changes the links in the "College Services" box
@@ -95,7 +114,7 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
         <div style="border-style: solid; border-color: #efefef; background-color: #ffffff; font-family: Arial,Helvetica,sans-serif; margin:0px 0px 0px 0px;">
             <!-- add a button to change the size and style of the font -->
             <div>
-            <h3>Change the Font Size and Style</h3>
+            <!--<h3>Change the Font Size and Style</h3>
             <div>
                 <input name="button" class="button" type="button" id="txt-large" value="Make Text Bigger" />
                 <input name="button" class="button" type="button" id="txt-small" value="Make Text Smaller" />
@@ -103,7 +122,7 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
             </div>
             <div>
                 <input name="button" class="button" type="button" id="txt-style" value="Random Text Style" />
-            </div>
+            </div>-->
             <!-- heading -->
             <div style="margin: 5px 5px 5px 10px;">  
                 <p></p>
@@ -201,19 +220,16 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
        </br>
        </br>
 		<div>
-		<h3>Switch to original version</h3>
                <a href="https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1">
                <input name="button" class="button" type="button" id="bt"
-               value="Switch Version" />
+               value="Switch to Original Version" />
                 </a>
 		</div>
     </div>`;
-
     document.getElementById("column0").appendChild(document.getElementById("module:_3073_1"));
 }
 
-
-/******** Checks if the URL is the Seneca BB Homepage (When SIGNED-IN) ********/
+// Checks if the URL is the Seneca BB Homepage (When signed-in)
 if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_241_1") {
     document.getElementById("module:_4360_1").innerHTML =
         `<!-- extid:_4360_1: -->`
@@ -312,26 +328,8 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
 				break;
 		   }
 	   }
-	   
 	c[0].remove();
-	   
    }
-  /* for (var i = 0; i < c.length; i++){
-	   if (c[i].className == 'annTitle'){
-		   console.log("found element with annTitle class");
-		   if (c[i].innerHTML != "Student News:" && c[i].innerHTML != "Full-Time Student News:"){
-				console.log("good stuff begins now");
-				var startOfNonStudentNews = 1;
-		   }
-	   }
-	   if (startOfNonStudentNews){
-		   console.log('ok ' + i);
-	   }else{
-			console.log('delet ' + i);
-		   c[0].remove();
-	   }
-	   
-   }*/
    
    output = announcementsObject.innerHTML;
     `<!-- extid:_4036_1: -->`
@@ -355,52 +353,39 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
     tot += '</details>';
 
     document.getElementById("module:_3077_1").innerHTML = tot;
-
 }
 
+// Styling
+element = document.querySelectorAll("h2");
+for (let i=0; i<element.length; i++) {
+    element[i].style.backgroundColor = "#E6E6FA";
+    element[i].style.border = "4px";
+}
 
-    var pendingRemoveSections = [
-        "module:_4399_1",
-        "module:_3075_1",
-        "module:_3074_1",
-        "module:_3925_1",
-        "module:_4396_1"
-        "module:_4396_1",
-        "module:_4388_1"
-    ];
+element = document.getElementsByClassName("portlet");
+for (let i=0; i<element.length; i++) {
+    element[i].style.border = "1px solid grey";
+    element[i].style.borderRadius = "4px";
+}
 
-    pendingRemoveSections.forEach(section => {
-        const element = document.getElementById(section);
-        if (element) {
-            element.style.display = "none";
-        }
-    });
+//Hide "Note: Only the courses that your instructors have activated..."
+element = document.getElementById("box_border");
+if (element) {
+    element.style.display = "none";
+}
 
-
-    element = document.querySelectorAll("h2");
-    for (let i=0; i<element.length; i++) {
-        element[i].style.backgroundColor = "#E6E6FA";
-        element[i].style.border = "4px";
-    }
-
-    element = document.getElementsByClassName("portlet");
-    for (let i=0; i<element.length; i++) {
-        element[i].style.border = "1px solid grey";
-        element[i].style.borderRadius = "4px";
-    }
-
-    var elements = document.getElementsByClassName("button");
-    for (let i=0; i<elements.length; i++) {
-        elements[i].style.color = "#fff";
-        elements[i].style.fontSize = "17px";
-        elements[i].style.backgroundColor = "#337ab7";
-        elements[i].style.border = "#2e6da4";
-        elements[i].style.borderRadius = "4px";
-        elements[i].style.width = "auto";
-        elements[i].style.height = "auto";
-        elements[i].style.padding = "5px";
-        elements[i].style.fontWeight = "normal";
-    }
+var elements = document.getElementsByClassName("button");
+for (let i=0; i<elements.length; i++) {
+    elements[i].style.color = "#fff";
+    elements[i].style.fontSize = "17px";
+    elements[i].style.backgroundColor = "#337ab7";
+    elements[i].style.border = "#2e6da4";
+    elements[i].style.borderRadius = "4px";
+    elements[i].style.width = "auto";
+    elements[i].style.height = "auto";
+    elements[i].style.padding = "5px";
+    elements[i].style.fontWeight = "normal";
+}
 
 // add event listner to the button that executes the function
 var txtlargeElement = document.getElementById('txt-large');
@@ -409,9 +394,6 @@ if (txtlargeElement) {
         resizeText(2);
     });
 }
-// document.getElementById('txt-large').addEventListener('click', () => {
-//     resizeText(2);
-// });
 
 var txtsmallElement = document.getElementById('txt-small');
 if (txtsmallElement) {
@@ -420,10 +402,6 @@ if (txtsmallElement) {
     });
 }
 
-// document.getElementById('txt-small').addEventListener('click', () => {
-//     resizeText(-2);
-// });
-
 var txtoriginalElement = document.getElementById('txt-original');
 if (txtoriginalElement) {
     txtoriginalElement.addEventListener('click', () => {
@@ -431,19 +409,9 @@ if (txtoriginalElement) {
     });
 }
 
-// document.getElementById('txt-original').addEventListener('click', () => {
-//     originalTextSize();
-// });
-
-var txtstyleElement = document.getElementById('txt-style');
-if (txtstyleElement) {
-    txtstyleElement.addEventListener('click', () => {
-        changeTextStyle();
-    });
-}
-
-// document.getElementById('txt-style').addEventListener('click', () => {
-//     changeTextStyle();
-// });
-
-
+//var txtstyleElement = document.getElementById('txt-style');
+//if (txtstyleElement) {
+ //   txtstyleElement.addEventListener('click', () => {
+       // changeTextStyle();
+  //  });
+//}

@@ -1,4 +1,3 @@
-
 if(window.location.href == "https://studenterp.senecacollege.ca/psp/ps/?cmd=login&languageCd=ENG&"){
     
     //get the id of the username input field and work our way back to the table its in
