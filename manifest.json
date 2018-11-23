@@ -13,8 +13,8 @@
 			"https://my.senecacollege.ca/*",
 			"https://studenterp.senecacollege.ca/*"
 		],
-			"js": ["src/homepage.js", "src/brigtnessExtension/brightness.js", "/src/addEmailLinkExtension/contentScript.js", "/src/studentcenterpage.js"],
-			"css": ["src/brigtnessExtension/cover.css", "src/cssThemes/dark-theme.css"]
+			"js": ["src/homepage.js", "src/brightnessExtension/brightness.js", "/src/addEmailLinkExtension/contentScript.js", "/src/studentcenterpage.js"],
+			"css": ["src/brightnessExtension/cover.css", "src/cssThemes/dark-theme.css"]
 		}
 	],
 	"browser_action": {
