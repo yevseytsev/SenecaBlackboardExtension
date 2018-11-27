@@ -114,7 +114,7 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
         <div style="border-style: solid; border-color: #efefef; background-color: #ffffff; font-family: Arial,Helvetica,sans-serif; margin:0px 0px 0px 0px;">
             <!-- add a button to change the size and style of the font -->
             <div>
-            <!--<h3>Change the Font Size and Style</h3>
+            <h3>Change the Font Size and Style</h3>
             <div>
                 <input name="button" class="button" type="button" id="txt-large" value="Make Text Bigger" />
                 <input name="button" class="button" type="button" id="txt-small" value="Make Text Smaller" />
@@ -122,7 +122,7 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
             </div>
             <div>
                 <input name="button" class="button" type="button" id="txt-style" value="Random Text Style" />
-            </div>-->
+            </div>
             <!-- heading -->
             <div style="margin: 5px 5px 5px 10px;">  
                 <p></p>
@@ -387,6 +387,31 @@ for (let i=0; i<elements.length; i++) {
     elements[i].style.fontWeight = "normal";
 }
 
+// function to resize the text
+function resizeText(value) {
+    var curSize = document.getElementById('text').style.fontSize;
+    if (curSize != '') {
+        curSize = curSize.slice(0, -2);
+        curSize = parseInt(curSize) + value;
+    } else {
+        curSize = 16;
+    }
+    document.getElementById('text').style.fontSize = curSize + 'px';
+}
+
+// function to set the text size to the original size
+function originalTextSize() {
+    document.getElementById('text').style.fontSize = '14px';
+}
+
+// function to change the text style
+function changeTextStyle() {
+    var fontStyle = ['Arial','Helvetica','Times New Roman','Times','Courier New','Courier','Verdana','Georgia',
+                    'Palatino','Garamond','Bookman','Comic Sans MS','Trebuchet MS','Arial Black','Impact']; 
+                    
+    document.getElementById('text').style.fontFamily = fontStyle[parseInt(Math.random()*fontStyle.length)];
+}
+
 // add event listner to the button that executes the function
 var txtlargeElement = document.getElementById('txt-large');
 if (txtlargeElement) {
@@ -409,9 +434,9 @@ if (txtoriginalElement) {
     });
 }
 
-//var txtstyleElement = document.getElementById('txt-style');
-//if (txtstyleElement) {
- //   txtstyleElement.addEventListener('click', () => {
-       // changeTextStyle();
-  //  });
-//}
+var txtstyleElement = document.getElementById('txt-style');
+if (txtstyleElement) {
+   txtstyleElement.addEventListener('click', () => {
+       changeTextStyle();
+   });
+}
