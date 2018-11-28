@@ -99,7 +99,31 @@ if(window.location.href.indexOf("https://my.senecacollege.ca/webapps/") == 0) {
 
 // Checks if the URL is the Seneca BB Homepage (When NOT signed-in)
 if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1") {
-    // Changes the links in the "College Services" box
+
+    //save the orginal "College Services" box
+    var oldhtml = document.getElementById('module:_3073_1').innerHTML;
+    //save the current version is the new version
+    var isNewVersion = true;
+
+    //add the switch button to the tab list at the top of the page
+    document.getElementById("appTabList").innerHTML = `<table class="appTabs transparent" id="appTabList" summary="Tab List table" role="presentation">
+    <tbody><tr>
+     <td id="Welcome" class="active">
+          <a href="/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1" target="_top"><span>Welcome</span>
+            <span class="hideoff"> Tab 1 of 1&nbsp;(active tab)</span>
+          </a>
+        </td>
+        <td id="Switch" class="active">
+        <a id="switch-back"><span>Switch Version</span>
+        <span class="hideoff"> Tab 1 of 1&nbsp;(active tab)</span></a>
+      </td>
+      </tr>
+  </tbody></table>`
+
+
+
+
+// Changes the links in the "College Services" box
     // Can directly edit the HTML below to replace what's in the box
     document.getElementById("module:_3073_1").innerHTML =
         `<!-- extid:3073: --> 
@@ -219,12 +243,6 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
        </br>
        </br>
        </br>
-		<div>
-               <a href="https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1">
-               <input name="button" class="button" type="button" id="bt"
-               value="Switch to Original Version" />
-                </a>
-		</div>
     </div>`;
     document.getElementById("column0").appendChild(document.getElementById("module:_3073_1"));
 }
@@ -408,6 +426,55 @@ if (txtoriginalElement) {
         originalTextSize();
     });
 }
+
+//function for the switch button
+var switchBack = document.getElementById('switch-back');
+if (switchBack) {
+
+    switchBack.addEventListener('click', () => {
+
+        //check the version
+        if(isNewVersion){
+            //add the removed section back
+            pendingRemoveSections.forEach(section => {
+                const element = document.getElementById(section);
+                if (element) {
+                    element.style.display = "block";
+                }
+    
+            });
+            //store the new verion of html code for "College Service" section
+            var temp = document.getElementById('module:_3073_1').innerHTML
+            //change back to the old version of html code for "College Service" section
+            document.getElementById('module:_3073_1').innerHTML = oldhtml;
+            oldhtml = temp;
+            isNewVersion = false;
+            //set the "College Service" section to it's original position
+            document.getElementById("column1").appendChild(document.getElementById("module:_3073_1"));
+
+        }
+        else{
+            //remove the useless section
+            pendingRemoveSections.forEach(section => {
+                const element = document.getElementById(section);
+                if (element) {
+                    element.style.display = "none";
+                }
+            });
+            //store the old verion of html code for "College Service" section
+                var temp = document.getElementById('module:_3073_1').innerHTML
+            //change to the new version of html code for "College Service" section
+                document.getElementById('module:_3073_1').innerHTML = oldhtml;
+                oldhtml = temp;
+                isNewVersion = true;
+            //set the "College Service" section to it's new position
+                document.getElementById("column0").appendChild(document.getElementById("module:_3073_1"));
+            }
+
+    });
+
+}
+
 
 //var txtstyleElement = document.getElementById('txt-style');
 //if (txtstyleElement) {
