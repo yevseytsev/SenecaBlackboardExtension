@@ -1,4 +1,4 @@
-// Removing useless sections
+
 var pendingRemoveSections = [
     "module:_4399_1",
     "module:_246_1",
@@ -101,6 +101,8 @@ if(window.location.href.indexOf("https://my.senecacollege.ca/webapps/") == 0) {
 if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1") {
     // Changes the links in the "College Services" box
     // Can directly edit the HTML below to replace what's in the box
+    var oldhtml = document.getElementById('module:_3073_1').innerHTML;
+
     document.getElementById("module:_3073_1").innerHTML =
         `<!-- extid:3073: --> 
     <div class="edit_controls">
@@ -127,7 +129,6 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
             <div style="margin: 5px 5px 5px 10px;">  
                 <p></p>
             </div>
-
             <ul style="margin: 2px 2px 2px 25px;" id="text"> <!-- add "text" id -->
                 <br />
                 <!-- link -->
@@ -157,7 +158,6 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                 <li style="color: #555555;">
                  <a href="https://inside.senecacollege.ca/its/support/myseneca/faculty/course_management/introduction.html" target="_blank">Seneca Faculty and Staff</a> <br /><br />
                 </li>
-
                 <!-- Start of Collapsible Seneca Services -->
                 <details>
                     <summary style="color: red; font-size: 18px"> More Seneca Services </summary>
@@ -211,7 +211,6 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                         <li style="color: #555555;">
                             <a href="http://www.senecacollege.ca/policies/" target="_blank">Policies</a><br /><br />
                         </li>
-
                     </ul>
                 </details>
             </ul>
@@ -220,10 +219,7 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
        </br>
        </br>
 		<div>
-               <a href="https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1">
-               <input name="button" class="button" type="button" id="bt"
-               value="Switch to Original Version" />
-                </a>
+            <button class = "button" type="button" id="switch-back">Switch to Original Version</button><div/>
 		</div>
     </div>`;
     document.getElementById("column0").appendChild(document.getElementById("module:_3073_1"));
@@ -408,6 +404,25 @@ if (txtoriginalElement) {
         originalTextSize();
     });
 }
+
+var switchBack = document.getElementById('switch-back');
+if (switchBack) {
+
+    switchBack.addEventListener('click', () => {
+            pendingRemoveSections.forEach(section => {
+                const element = document.getElementById(section);
+                if (element) {
+                    element.style.display = "block";
+                }
+    
+            });
+            document.getElementById("column1").appendChild(document.getElementById("module:_3073_1"));
+            var temp = document.getElementById('module:_3073_1').innerHTML
+            document.getElementById('module:_3073_1').innerHTML = oldhtml;
+            oldhtml = temp;
+    });
+}
+
 
 //var txtstyleElement = document.getElementById('txt-style');
 //if (txtstyleElement) {
