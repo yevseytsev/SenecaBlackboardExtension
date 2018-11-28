@@ -157,6 +157,9 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                 <li style="color: #555555;">
                  <a href="https://inside.senecacollege.ca/its/support/myseneca/faculty/course_management/introduction.html" target="_blank">Seneca Faculty and Staff</a> <br /><br />
                 </li>
+                <li style="color: #555555;">
+                 <a href="https://sw.senecacollege.ca/home.htm" target="_blank">Seneca Works</a> <br /><br />
+                </li>
 
                 <!-- Start of Collapsible Seneca Services -->
                 <details>
