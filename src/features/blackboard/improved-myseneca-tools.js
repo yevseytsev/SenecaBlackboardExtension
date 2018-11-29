@@ -14,6 +14,10 @@ if(window.location.href.indexOf("https://my.senecacollege.ca/webapps/") == 0) {
             <a href="http://myseneca.ca" target="_blank">E-mail</a>
             <br>
 
+            <i class="icon-book icon-fixed-width icon-large" style="padding-right: 5px; color: #ce3229;"></i>&nbsp;
+            <a href="https://sw.senecacollege.ca/home.htm" target="_blank">Seneca Works</a>
+            <br>
+
             <i class="icon-comments-alt icon-fixed-width icon-large" style="padding-right: 5px; color: #ce3229;" ></i>&nbsp;
             <a href="` + emailLink + `" target="content">Questions/Comments</a>
             <br>
