@@ -1,5 +1,6 @@
 // Checks if the URL is the Seneca BB Homepage (When signed-in)
-if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_241_1") {
+if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_241_1" ||
+    window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tabId=_101627_1&tab_tab_group_id=_241_1") {
     document.getElementById("module:_4360_1").innerHTML =
         `<!-- extid:_4360_1: -->`
         /****** CALENDAR ******/

@@ -13,13 +13,13 @@ window.addEventListener('keydown', function(e) {
     if (e.altKey && e.keyCode == 90) { //Alt+Z: open dark mode
         cover(brightness = 0.3);
     }
-    if (e.altKey && e.keyCode == 88) { //Alt+X:close mode
+    if (e.altKey && e.keyCode == 88) { //Alt+X: close mode
         cover(brightness = 0);
     }
-    if (e.altKey && e.keyCode == 38) { //Alt+↑: increase brigtness
+    if (e.altKey && e.keyCode == 38) { //Alt+↑: increase brightness
         if (brightness - 0.05 > 0.05) cover(brightness -= 0.05);
     }
-    if (e.altKey && e.keyCode == 40) { //Alt+↓: decrease brigtness
+    if (e.altKey && e.keyCode == 40) { //Alt+↓: decrease brightness
         if (brightness + 0.05 < 0.95) cover(brightness += 0.05);
     }
 }, false);
