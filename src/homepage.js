@@ -113,7 +113,7 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
         <div style="border-style: solid; border-color: #efefef; background-color: #ffffff; font-family: Arial,Helvetica,sans-serif; margin:0px 0px 0px 0px;">
             <!-- add a button to change the size and style of the font -->
             <div>
-            <!--<h3>Change the Font Size and Style</h3>
+            <!-- <h3>Change the Font Size and Style</h3>
             <div>
                 <input name="button" class="button" type="button" id="txt-large" value="Make Text Bigger" />
                 <input name="button" class="button" type="button" id="txt-small" value="Make Text Smaller" />
@@ -121,7 +121,7 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
             </div>
             <div>
                 <input name="button" class="button" type="button" id="txt-style" value="Random Text Style" />
-            </div>-->
+            </div> --!>
             <!-- heading -->
             <div style="margin: 5px 5px 5px 10px;">  
                 <p></p>
@@ -131,30 +131,35 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                 <br />
                 <!-- link -->
                 <li style="color: #555555;">
-                    <a href="https://myseneca.ca" target="_blank">MySeneca Email</a><br /><br />
-                </li>
-                <!-- link -->
-                <li style="color: #555555;">
-                    <a href="https://studenterp.senecacollege.ca/psp/ps/?cmd=login" target="_blank">Student Centre</a> <br /><br />
+                    <a href="http://www.senecacollege.ca/registrar/dates/" target="_blank">Important Academic Dates</a> <br /><br />
                 </li>
                 <!-- link -->
                 <li style="color: #555555;">
                     <a href="https://inside.senecacollege.ca/its/support/myseneca/" target="_blank">My.Seneca Help</a> <br /><br />
                 </li>
+                <!-- link -->
+                <li style="color: #555555;">
+                    <a href="https://myseneca.ca" target="_blank">MySeneca Email</a><br /><br />
+                </li>
+                <!-- link -->
+                <li style="color: #555555;">
+                 <a href="https://inside.senecacollege.ca/its/support/myseneca/faculty/course_management/introduction.html" target="_blank">Seneca Faculty and Staff</a> <br /><br />
+                </li>
+                <!-- link -->
                 <li style="color: #555555;">
                 <a href="https://ict.senecacollege.ca/" target="_blank">Seneca ICT</a> <br /><br />
                 </li>
+                <!-- link -->
                 <li style="color: #555555;">
                  <a href="http://www.senecacollege.ca/international.html" target="_blank">Seneca International</a> <br /><br />
                 </li>
-                <li style="color: #555555;">
-                    <a href="http://www.senecacollege.ca/registrar/dates/" target="_blank">Important Academic Dates</a> <br /><br />
-                </li>
+                <!-- link -->
                 <li style="color: #555555;">
                 <a href="http://library.senecacollege.ca/" target="_blank">Seneca Libraries</a> <br /><br />
                 </li>
+                <!-- link -->
                 <li style="color: #555555;">
-                 <a href="https://inside.senecacollege.ca/its/support/myseneca/faculty/course_management/introduction.html" target="_blank">Seneca Faculty and Staff</a> <br /><br />
+                    <a href="https://studenterp.senecacollege.ca/psp/ps/?cmd=login" target="_blank">Student Centre</a> <br /><br />
                 </li>
 
                 <!-- Start of Collapsible Seneca Services -->
@@ -162,17 +167,13 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                     <summary style="color: red; font-size: 18px"> More Seneca Services </summary>
                     </br>
                     <ul>
-                        <!-- link -->
+                    <!-- link -->
                         <li style="color: #555555;">
-                            <a href="http://www.senecacollege.ca/onecard/index.html" target="_blank">OneCard</a><br /><br />
+                            <a href="http://www.senecacollege.ca/bookstore" target="_blank">BookStore</a><br /><br />
                         </li>
                         <!-- link -->
                         <li style="color: #555555;">
-                            <a href="https://inside.senecacollege.ca/its/" target="_blank">ITS Service Desk</a><br /><br />
-                        </li>
-                        <!-- link -->
-                        <li style="color: #555555;">
-                            <a href="http://www.senecacollege.ca/ce" target="_blank">Part-time Registration</a><br /><br />
+                            <a href="http://www.senecacollege.ca/ce/cdl/" target="_blank">Centre for Flexible Learning</a><br /><br />
                         </li>
                         <!-- link -->
                         <li style="color: #555555;">
@@ -180,7 +181,11 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                         </li>
                         <!-- link -->
                         <li style="color: #555555;">
-                            <a href="http://library.senecacollege.ca/" target="_blank">Seneca Libraries</a><br /><br />
+                            <a href="http://www.senecacollege.ca/onecard/index.html" target="_blank">OneCard</a><br /><br />
+                        </li>
+                        <!-- link -->
+                        <li style="color: #555555;">
+                            <a href="https://inside.senecacollege.ca/its/" target="_blank">ITS Service Desk</a><br /><br />
                         </li>
                         <!-- link -->
                         <li style="color: #555555;">
@@ -192,15 +197,11 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                         </li>
                         <!-- link -->
                         <li style="color: #555555;">
-                            <a href="http://www.senecacollege.ca/bookstore" target="_blank">BookStore</a><br /><br />
+                            <a href="http://www.senecacollege.ca/ce" target="_blank">Part-time Registration</a><br /><br />
                         </li>
                         <!-- link -->
                         <li style="color: #555555;">
-                            <a href="http://www.senecacollege.ca/ce/cdl/" target="_blank">Centre for Flexible Learning</a><br /><br />
-                        </li>
-                        <!-- link -->
-                        <li style="color: #555555;">
-                            <a href="https://apps.senecacollege.ca/pat/assessment/" target="_blank">Skills Assessment</a><br /><br />
+                            <a href="http://www.senecacollege.ca/policies/" target="_blank">Policies</a><br /><br />
                         </li>
                         <!-- link -->
                         <li style="color: #555555;">
@@ -208,7 +209,7 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
                         </li>
                         <!-- link -->
                         <li style="color: #555555;">
-                            <a href="http://www.senecacollege.ca/policies/" target="_blank">Policies</a><br /><br />
+                            <a href="https://apps.senecacollege.ca/pat/assessment/" target="_blank">Skills Assessment</a><br /><br />
                         </li>
 
                     </ul>
