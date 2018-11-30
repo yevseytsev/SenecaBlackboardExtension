@@ -1,0 +1,14 @@
+input[type=checkbox], input[type=radio] {
+  transform: scale(1.3);
+  padding: 10px;
+}
+
+.checkboxtext, .radiotext {
+  /* Checkbox and radio button text */
+  font-size: 120%;
+  display: inline;
+}
+
+button {
+    font-size: 120%;
+}
