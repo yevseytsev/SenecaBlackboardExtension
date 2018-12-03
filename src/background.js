@@ -23,11 +23,17 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
             themeDefault: true,
             themeDark: false,
             themeNew: false,
-            forgotPass: true
+            forgotPass: true,
+            fontSize: true
             },
         // This will check each stored value for the options and execute the script
         // for each option if it was turned on
         function(items) {
+            if(items.fontSize == true) {
+                chrome.tabs.executeScript({
+                    file: 'src/features/blackboard/fontSize.js'
+                });
+            }
             if (items.brightness == true) {
                 chrome.tabs.executeScript({
                     file: 'src/features/blackboard/brightnessExtension/brightness.js'
