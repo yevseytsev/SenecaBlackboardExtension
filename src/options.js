@@ -11,7 +11,6 @@ function save_options() {
     var removeITSBox = document.getElementById('remove-its').checked;
     var removeMyOrgBox = document.getElementById('remove-my-org').checked;
     var removeMsSubjNoteBox = document.getElementById('remove-ms-subj-note').checked;
-    var removeQwicklyBox = document.getElementById('remove-qwickly').checked;
     var removeSenecaNewsBox = document.getElementById('remove-news').checked;
     var removeSpotlightBox = document.getElementById('remove-spotlight').checked;
     var removeWebMailBox = document.getElementById('remove-webmail').checked;
@@ -32,7 +31,6 @@ function save_options() {
       removeITS: removeITSBox,
       removeMyOrg: removeMyOrgBox,
       removeMsSubjNote: removeMsSubjNoteBox,
-      removeQwickly: removeQwicklyBox,
       removeNews: removeSenecaNewsBox,
       removeSpotlight: removeSpotlightBox,
       removeWebMail: removeWebMailBox,
@@ -66,7 +64,6 @@ chrome.storage.sync.get({
     removeITS: true,
     removeMyOrg: true,
     removeMsSubjNote: true,
-    removeQwickly: true,
     removeNews: true,
     removeSpotlight: true,
     removeWebMail: true,
@@ -86,7 +83,6 @@ chrome.storage.sync.get({
     document.getElementById('remove-its').checked = items.removeITS;
     document.getElementById('remove-my-org').checked = items.removeMyOrg;
     document.getElementById('remove-ms-subj-note').checked = items.removeMsSubjNote;
-    document.getElementById('remove-qwickly').checked = items.removeQwickly;
     document.getElementById('remove-news').checked = items.removeNews;
     document.getElementById('remove-spotlight').checked = items.removeSpotlight;
     document.getElementById('remove-webmail').checked = items.removeWebMail;
