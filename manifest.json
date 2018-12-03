@@ -6,16 +6,22 @@
 	"manifest_version": 2,
 	"permissions": [
 		"https://my.senecacollege.ca/*",
+		"https://studenterp.senecacollege.ca/*",
 		"storage",
 		"activeTab"
 	],
 	"content_scripts": [
 		{
+			"run_at": "document_start",
 			"matches": [
 			"https://my.senecacollege.ca/*",
-			"https://studenterp.senecacollege.ca/*"
+			"https://studenterp.senecacollege.ca/*" 
 		],
-            "js": ["src/background.js"]
+            "js": [
+				"src/background.js",
+				"src/homepage.js",
+				"src/options.js"
+			]
 		}
 	],
 	"browser_action": {
