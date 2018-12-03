@@ -16,7 +16,6 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
             removeITS: true,
             removeMyOrg: true,
             removeMsSubjNote: true,
-            removeQwickly: true,
             removeNews: true,
             removeSpotlight: true,
             removeWebMail: true,
