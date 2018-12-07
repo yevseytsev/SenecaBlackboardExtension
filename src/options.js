@@ -11,7 +11,6 @@ function save_options() {
     var removeITSBox = document.getElementById('remove-its').checked;
     var removeMyOrgBox = document.getElementById('remove-my-org').checked;
     var removeMsSubjNoteBox = document.getElementById('remove-ms-subj-note').checked;
-    var removeQwicklyBox = document.getElementById('remove-qwickly').checked;
     var removeSenecaNewsBox = document.getElementById('remove-news').checked;
     var removeSpotlightBox = document.getElementById('remove-spotlight').checked;
     var removeWebMailBox = document.getElementById('remove-webmail').checked;
@@ -19,6 +18,7 @@ function save_options() {
     var darkBox = document.getElementById('theme-dark').checked;
     var newBox = document.getElementById('theme-new').checked;
     var forgotPassBox = document.getElementById('forgot-pass').checked;
+    var fontSizeBox = document.getElementById('fontSize').checked;
     
     chrome.storage.sync.set({
       brightness: brightnessBox,
@@ -32,14 +32,14 @@ function save_options() {
       removeITS: removeITSBox,
       removeMyOrg: removeMyOrgBox,
       removeMsSubjNote: removeMsSubjNoteBox,
-      removeQwickly: removeQwicklyBox,
       removeNews: removeSenecaNewsBox,
       removeSpotlight: removeSpotlightBox,
       removeWebMail: removeWebMailBox,
       themeDefault: defaultBox,
       themeDark: darkBox,
       themeNew: newBox,
-      forgotPass: forgotPassBox
+      forgotPass: forgotPassBox,
+      fontSize: fontSizeBox
     }, function() {
       // Update status to let user know options were saved.
       var status = document.getElementById('status');
@@ -66,14 +66,14 @@ chrome.storage.sync.get({
     removeITS: true,
     removeMyOrg: true,
     removeMsSubjNote: true,
-    removeQwickly: true,
     removeNews: true,
     removeSpotlight: true,
     removeWebMail: true,
     themeDefault: true,
     themeDark: false,
     themeNew: false,
-    forgotPass: true
+    forgotPass: true,
+    fontSize
 }, function(items) {
     document.getElementById('adj-brightness').checked = items.brightness;
     document.getElementById('calendar').checked = items.calendar;
@@ -86,7 +86,6 @@ chrome.storage.sync.get({
     document.getElementById('remove-its').checked = items.removeITS;
     document.getElementById('remove-my-org').checked = items.removeMyOrg;
     document.getElementById('remove-ms-subj-note').checked = items.removeMsSubjNote;
-    document.getElementById('remove-qwickly').checked = items.removeQwickly;
     document.getElementById('remove-news').checked = items.removeNews;
     document.getElementById('remove-spotlight').checked = items.removeSpotlight;
     document.getElementById('remove-webmail').checked = items.removeWebMail;
@@ -94,6 +93,7 @@ chrome.storage.sync.get({
     document.getElementById('theme-dark').checked = items.themeDark;
     document.getElementById('theme-new').checked = items.themeNew;
     document.getElementById('forgot-pass').checked = items.forgotPass;
+    document.getElementById('fontSize').checked = items.fontSize;
 });
 }
 document.addEventListener('DOMContentLoaded', restore_options);

@@ -5,7 +5,7 @@ var pendingRemoveSections = [
     "module:_4386_1", //Course assessment survey
     "module:_3075_1", //Seneca Spotlight
     "module:_3074_1", //Seneca News
-    "module:_4396_1", //Qwickly
+    //"module:_4396_1", //Qwickly
     "module:_907_1", //Webmail Seneca Outlook - myseneca.ca
     "module:_3925_1", //My Organizations Plus
     "module:_4388_1", //Status of ITS Enterprise Services
@@ -407,4 +407,14 @@ if (txtoriginalElement) {
     });
 }
 
-
+if(window.location.href == "https://studenterp.senecacollege.ca/psp/ps/?cmd=login&languageCd=ENG&"){
+    
+    var tbody = document.getElementById("userid").parentElement.parentElement.parentElement;
+    var tr = document.createElement("tr");
+    tr.innerHTML = `<td height="35">&nbsp;</td>
+                    <td height="35">&nbsp;</td>
+                    <td height="35">
+                        <a href="https://myid.senecacollege.ca/passwordservice/"><input type="button" class="s3_button" value="Forgot Password" /></a>
+                    </td>`;
+    tbody.appendChild(tr);
+}
