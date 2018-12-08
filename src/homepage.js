@@ -18,6 +18,8 @@ pendingRemoveSections.forEach(section => {
     }
 });
 
+
+
 // Checks if the URL is the Seneca BB Homepage
 if (window.location.href.indexOf("https://my.senecacollege.ca/webapps/") == 0) {
     var badgeElement = document.getElementById('badgeTotalCount');
@@ -98,6 +100,56 @@ if(window.location.href.indexOf("https://my.senecacollege.ca/webapps/") == 0) {
 
 // Checks if the URL is the Seneca BB Homepage (When NOT signed-in)
 if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1") {
+
+
+    // Removes links from "College Services"
+    setTimeout(function() {
+
+        var collegeServicesElement = document.getElementById('module:_3073_1');
+        console.log("collegeServicesElement = " + collegeServicesElement.innerText); 
+
+        // Checks if collegeServicesElement exists on current page
+        if(collegeServicesElement != null){
+            var listElement = collegeServicesElement.getElementsByClassName('collapsible');
+
+            // Removes BookStore link
+            var bookStoreElement = listElement[0].children[0].children[1].children[1];
+            bookStoreElement.style.display = "none";
+
+            // Removes Centre for Flexible Learning link
+            var flexibleLearningElement = listElement[0].children[0].children[1].children[2];
+            flexibleLearningElement.style.display = "none";
+
+            // Removes One Card link
+            var oneCardElement = listElement[0].children[0].children[1].children[4];
+            oneCardElement.style.display = "none";
+
+            // Removes Parking & Transportation link
+            var parkingElement = listElement[0].children[0].children[1].children[5];
+            parkingElement.style.display = "none";
+
+            // Removes Part-time Registration link
+            var partTimeElement = listElement[0].children[0].children[1].children[6];
+            partTimeElement.style.display = "none";
+
+            // Removes Policies link
+            var policiesElement = listElement[0].children[0].children[1].children[7];
+            policiesElement.style.display = "none";
+
+            // Removes ITS Service Desk link 
+            var serviceDeskElement = listElement[0].children[0].children[1].children[8];
+            serviceDeskElement.style.display = "none";
+
+            // Removes Security & Emergency Procedures link 
+            var proceduresElement = listElement[0].children[0].children[1].children[9];
+            proceduresElement.style.display = "none";
+
+            // Removes Skills Assessment link 
+            var assessmentElement = listElement[0].children[0].children[1].children[11];
+            assessmentElement.style.display = "none";
+        }
+    }, 1000);
+
     // Changes the links in the "College Services" box
     // Can directly edit the HTML below to replace what's in the box
     document.getElementById("module:_3073_1").innerHTML =
