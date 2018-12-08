@@ -18,6 +18,10 @@ if(window.location.href.indexOf("https://my.senecacollege.ca/webapps/") == 0) {
             <a href="https://sw.senecacollege.ca/home.htm" target="_blank">Seneca Works</a>
             <br>
 
+            <i class="icon-truck icon-fixed-width icon-large" style="padding-right: 5px; color: #ce3229;"></i>&nbsp;
+            <a href="http://www.senecacollege.ca/transportation/campusbuses.html" target="_blank">Campus Shuttle</a>
+            <br>
+
             <i class="icon-comments-alt icon-fixed-width icon-large" style="padding-right: 5px; color: #ce3229;" ></i>&nbsp;
             <a href="` + emailLink + `" target="content">Questions/Comments</a>
             <br>
