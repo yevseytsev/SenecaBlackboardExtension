@@ -268,6 +268,77 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
     document.getElementById("module:_4036_1").innerHTML = tot;
 }
 
+//---------------------------------------------------------
+if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_241_1") {
+    document.getElementById("module:_3925_1").innerHTML = '<button id= "getWeather">' + "Get Weatger" + '</button>';
+
+    document.getElementById("getWether").addEventListener('click', getText);
+
+    function getText(){
+        console.log(123);
+    }
+
+    let urlStr = "http://api.openweathermap.org/data/2.5/weather?q=beijing&units=metric&appid=2ba5d1db9c55f5acc1f770bafd9e2caa"
+
+    // fetch(urlStr)
+    // .then((res) => {
+    //     console.log(res);
+    //     }).then((data) =>{
+    //     console.log(data);
+    //     document.getElementById("module:_3925_1").innerHTML = data;
+    // });
+    // document.getElementById("module:_3925_1").innerHTML = weatherStr;
+    // `<!-- extid:_3925_1: -->`
+    // let urlStr = "http://api.openweathermap.org/data/2.5/weather?q=beijing&units=metric&appid=2ba5d1db9c55f5acc1f770bafd9e2caa"
+    // let apiData = JSON.stringify(urlStr);
+    // document.getElementById("module:_3925_1").innerHTML = apiData;
+    // var getJSON = (call, callback) => {
+    //     var xhr = new XMLHttpRequest();
+    //     xhr.open('GET', "http://api.openweathermap.org/data/2.5/weather?q=beijing&units=metric&appid=2ba5d1db9c55f5acc1f770bafd9e2caa", true);
+    //     xhr.responseType = 'json';
+    //     xhr.onload = () => {
+    //         if (status === 200) {
+    //             callback(null, xhr.response);
+    //         } else {
+    //             callback(status, xhr.response);
+    //         }
+    //         xhr.send();
+    //     };
+    //     document.getElementById("module:_3925_1").innerHTML = getJSON;
+    // }
+
+    // var xhr = new XMLHttpRequest();
+    // xhr.open('GET',urlStr, true);
+    // xhr.send();
+
+    // xhr.onreadystatechange = processRequest;
+
+    
+
+    // var w_tr = '<tr>';
+    // var w_tr = '</tr>';
+    // var highlighted= '<td width="300"><table cellspacing=0 border=1 bgcolor=FF466A bordercolor=CCCCCC"><tr><td width=200><b><center>';
+    // var highlighted1 = '</center></td></tr></table></b>';
+    // var w_td = '<td width="300" ><center>';
+    // var w_td = '</center></td>';
+
+    
+    // weatherStr = '<table border=1 cellspacing=0 cellpading=1 bordercolor=BBBBBB><caption style="padding:5px 0 3px 12px; font-weight: bolder; font-size: 1.1rem; background-color: #c2c2c2">' 
+    //         + " Calendar " + '</caption<tr><td>';
+    // weatherStr += '<table border=0 cellspacing=0 cellpading=2>' + w_tr;
+    // weatherStr += '<td COLSPAN="' + each_days + '" bgcolor="#EFEFEF" ><center><b>';
+    // weatherStr += '<div style="color: red;">' + each_month[month] + '   ' + year + '</b>' + l_td + l_tr + '</div>';
+    // weatherStr += w_tr;
+
+    // weatherStr += w_td + w_tr;
+    // weatherStr += w_tr;
+    
+
+}
+
+
+//-------------------------------------------------------------------------------
+
 
     // Removing "Did You Know?" Section by getting the element ID
     var element = document.getElementById("module:_4399_1");
