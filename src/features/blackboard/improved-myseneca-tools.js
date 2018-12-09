@@ -22,6 +22,10 @@ if(window.location.href.indexOf("https://my.senecacollege.ca/webapps/") == 0) {
             <a href="` + emailLink + `" target="content">Questions/Comments</a>
             <br>
 
+            <i class="icon-twitter icon-fixed-width icon-large" style="padding-right: 5px; color: #ce3229;" > </i>&nbsp;
+            <a href="https://twitter.com/senecacollege" target="_blank">Seneca Twitter</a>
+            <br>
+
             <i class="icon-calendar icon-fixed-width icon-large" style="padding-right: 5px; color: #ce3229;"></i>&nbsp;
             <a href="/webapps/bb-social-learning-bb_bb60/execute/mybb?cmd=display&amp;toolId=calendar-mybb_____calendar-tool" target="_self">My.Seneca&nbsp;Calendar</a>
             <br>
