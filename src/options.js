@@ -73,7 +73,7 @@ chrome.storage.sync.get({
     themeDark: false,
     themeNew: false,
     forgotPass: true,
-    fontSize
+    fontSize: true
 }, function(items) {
     document.getElementById('adj-brightness').checked = items.brightness;
     document.getElementById('calendar').checked = items.calendar;
