@@ -2,5 +2,6 @@
 if (window.location.href.indexOf("https://my.senecacollege.ca/webapps/") == 0) {
     // Removing "Did You Know?" Section by getting the element ID
     var element = document.getElementById("module:_4388_1");
+    if (element)
     element.style.display = "none";
 }

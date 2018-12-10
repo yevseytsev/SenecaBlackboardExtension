@@ -97,4 +97,7 @@ chrome.storage.sync.get({
 });
 }
 document.addEventListener('DOMContentLoaded', restore_options);
-document.getElementById('save').addEventListener('click', save_options);
+var element_id_save = document.getElementById('save');
+if (element_id_save) {
+  element_id_save.addEventListener('click', save_options);
+}
