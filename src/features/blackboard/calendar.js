@@ -100,7 +100,7 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
 	   }
 	c[0].remove();
    }
-   
+
    output = announcementsObject.innerHTML;
     `<!-- extid:_4036_1: -->`
     var tot; //store the overall
