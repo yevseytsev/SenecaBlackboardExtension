@@ -18,7 +18,6 @@ We would be happy to accept your impovements to Seneca BlackBoard extension for 
     ```sh
     git clone https://github.com/{your-github-username}/SenecaBlackboardExtension
     cd SenecaBlackboardExtension
-    npm install
     ```
 1. Create a branch corresponding to your issue
 1. Add your files/code to this branch
