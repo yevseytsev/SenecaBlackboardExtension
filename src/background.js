@@ -23,7 +23,8 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
             themeDark: false,
             themeNew: false,
             forgotPass: true,
-            fontSize: true
+            fontSize: true,
+            weather: true
             },
         // This will check each stored value for the options and execute the script
         // for each option if it was turned on
@@ -124,6 +125,11 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
             if (items.forgotPass == true) {
                 chrome.tabs.executeScript({
                     file: 'src/features/studentCentre/forgot-password.js'
+                });
+            }
+            if (items.weather == true) {
+                chrome.tabs.executeScript({
+                    file: 'src/features/blackboard/weather.js'
                 });
             }
         });
