@@ -283,7 +283,8 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
 
 // Checks if the URL is the Seneca BB Homepage (When signed-in)
 if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_241_1") {
-    document.getElementById("module:_4360_1").innerHTML =
+window.onload = function() {
+ document.getElementById("module:_4360_1").innerHTML =
         `<!-- extid:_4360_1: -->`
         /****** CALENDAR ******/
     var each_day = new Array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
@@ -355,7 +356,7 @@ if (window.location.href == "https://my.senecacollege.ca/webapps/portal/execute/
     cal += '</td></tr></table></table></details>';
 
     document.getElementById("module:_4360_1").innerHTML = cal;
-
+}
 
     
    /**** Collapsible for Announcements ****/
