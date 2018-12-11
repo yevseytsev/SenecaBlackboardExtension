@@ -14,7 +14,8 @@
 				"https://my.senecacollege.ca/*",
 				"https://studenterp.senecacollege.ca/*"
             ],
-			"js": ["/src/homepage-guest.js", "/src/addEmailLinkExtension/contentScript.js", "/src/studentcenterpage.js"]
+			"js": ["/src/homepage-guest.js", "/src/addEmailLinkExtension/contentScript.js", "/src/studentcenterpage.js"],
+			"css": ["src/dark-theme.css"]
 		}
 	],
 	"background": {
@@ -23,10 +24,9 @@
 	"browser_action": {
 		"default_icon": "./images/icon128.png"
 	},
-  "css": ["src/dark-theme.css"]
+  
 			
-		}
-	],
+		
 	"icons": {
 		"128": "./images/icon128.png",
 		"48": "./images/icon48.png",
