@@ -51,7 +51,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
                     file: 'src/features/blackboard/improved-badges.js'
                 });
             }
-            if (items.collegeService == true) {
+            if (items.collegeServices == true) {
                 chrome.tabs.executeScript({
                     file: 'src/features/blackboard/improved-college-services.js'
                 });
