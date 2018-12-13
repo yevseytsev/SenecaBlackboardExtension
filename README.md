@@ -7,21 +7,11 @@ Feel free to add new issues, work on them and submit your pull requests for revi
 You can disscuss your suggestions by joining out our [Slack Channel](https://join.slack.com/t/seneca-web-extension/shared_invite/enQtNDczNTEwMzE5NzgzLTA1NTk0YzIxMzM4YTcwYTQ5ZDNjMjZiMDRhMGUxZGIyODQ3OWVjZGIwZWJkNGFmYTk0ZGMzNDE2NTRlMmM2ZTM).
 
 
-# What we want to do?
+# How to Install for Users (for devlopers, see CONTRIBUTING.md)
 
-Following useless information will be removed from the Seneca Blackboard :
-- [ ] Seneca News
-- [X] Seneca Spotlight
-- [X] Did You Know?
-- [ ] Quickly
-- [ ] Useless announcements (Full-Time Student News, Student News)
-
-Following features will be added to the Seneca Blackboard :
-- [ ] Organize modules that left after removing useless parts
-- [ ] New module dedicated to important dates
-- [ ] Announcements should show date, either as year, month, and day, or X days ago
-- [ ] Split up announcements and marks notifications in the top right corner on the main page
-- [ ] Button to switch to original version of Blackboard
-- [ ] Add the email link to the login page
-- [ ] Add the MySeneca.Help link to the my.senecacollege.ca sign in page
-- [ ] Add Reset/Forgot password on this sign in page
+1. Click Clone or download, and click Download ZIP file
+2. Extract the zip file, which creates a folder called "SenecaBlackboardExtension-master"
+3. Go to chrome://extensions/
+4. Click load unpacked
+5. Select the extracted folder called "SenecaBlackboardExtension-master" (not the compressed zip file)
+6. Click OK, and the extension will be installed
